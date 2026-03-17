@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="hearts-container"></div>
+
+    <!-- Main Screen -->
+    <main id="main-screen" class="screen active">
+        <div class="card">
+            <h1 class="main-question">Will you be my forever love? 💖</h1>
+            <div class="button-group">
+                <button id="btn-yes" class="btn primary-btn pulse-anim">YES 💚</button>
+                <button id="btn-no" class="btn secondary-btn">NO 🙈</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Persuasion Flow Screen -->
+    <main id="persuasion-screen" class="screen hidden">
+        <div class="card">
+            <div class="progress-container">
+                <span class="progress-label">Convincing you... 💖 (<span id="progress-text">10%</span>)</span>
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill" style="width: 10%;"></div>
+                </div>
+            </div>
+
+            <div id="sticker-container" class="sticker-anim">
+                <div class="sticker">🥺</div>
+                <h2 id="persuasion-text" class="persuasion-text">Are you sureee? 🥺</h2>
+            </div>
+
+            <div id="persuasion-buttons" class="button-group mt-4">
+                <button id="btn-next" class="btn primary-btn pulse-anim">Next 💕</button>
+            </div>
+
+            <div id="final-choice-buttons" class="button-group mt-4 hidden">
+                <button id="btn-final-yes" class="btn primary-btn pulse-anim">YES 💚</button>
+                <div class="escape-btn-container">
+                    <button id="btn-final-no" class="btn secondary-btn">STILL NO 🙈</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Success Screen -->
+    <main id="success-screen" class="screen hidden">
+        <div class="card success-card">
+            <div class="sticker success-sticker bounce-anim">🧸💘</div>
+            <h1 class="success-title">Yayyyyy! I love you so much! ❤️</h1>
+            <div class="love-message-container">
+                <p class="love-message">
+                    My dearest baby,<br><br>
+                    You mean the absolute world to me. Every moment spent with you is like a beautiful dream come true.
+                    I promise to always care for you, cherish our times together, and be your biggest supporter.
+                    You are my person, today and always. 💖
+                </p>
+            </div>
+            <button id="btn-read-again" class="btn secondary-btn mt-4">Read Again 💌</button>
+        </div>
+    </main>
+
+    <!-- Optional soft background sounds preloaded -->
+    <audio id="click-sound" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3"
+        preload="auto"></audio>
+    <audio id="success-sound" src="https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3"
+        preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
