@@ -1,0 +1,25 @@
+{
+  "name": "cute_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bs-odela/lvproject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/bs-odela/lvproject/issues"
+  },
+  "homepage": "https://bs-odela.github.io/lvproject",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
